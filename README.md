@@ -55,6 +55,6 @@ car -> [ { wash, P: 0.75}, { park: P 0.25} ]
 
 This means that picking one is a simple random number generation over the length of the list.
 
-A graph data structure would also be an elegant way of storing the chain. I chose the Map mainly due to familiarity with the API.
+A graph data structure would also be an elegant way of storing the chain. I chose the Map mainly due to familiarity with the API vs attempting to find a good graph library for Java.
 
 There are no unit tests for this code: it was difficult to work out how to write tests for something that is essentially random!
