@@ -47,11 +47,15 @@ The chain is represented using a HashMap where the key is the prefix
 and the value is the list of possible suffixes. A suffix can be stored more than once in the list, so 
 this weights the probabilities accordingly. For example, for prefix "car" we might have:
 
+```
 car -> [wash, park, wash, wash]
+```
 
 which is equivalent to:
 
+```
 car -> [ { wash, P: 0.75}, { park: P 0.25} ]
+```
 
 This means that picking one is a simple random number generation over the length of the list.
 
